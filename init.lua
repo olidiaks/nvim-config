@@ -92,6 +92,9 @@ require('lazy').setup({
 
       -- Additional lua configuration, makes nvim stuff amazing!
       'folke/neodev.nvim',
+
+      -- Language servers for programming language.
+      'valentjn/vscode-ltex',
     },
   },
 
@@ -564,12 +567,14 @@ require('mason-lspconfig').setup()
 --  If you want to override the default filetypes that your language server will attach to you can
 --  define the property 'filetypes' to the map in question.
 local servers = {
-  -- clangd = {},
+  clangd = { filetypes = { 'c', 'cpp', 'h' } },
+  bashls = {},
   -- gopls = {},
-  -- pyright = {},
+  jedi_language_server = { filetypes = { 'py' } },
   -- rust_analyzer = {},
   -- tsserver = {},
-  -- html = { filetypes = { 'html', 'twig', 'hbs'} },
+  html = { filetypes = { 'html', 'twig', 'hbs'} },
+  cssls = { filetypes = { 'css'} },
 
   lua_ls = {
     Lua = {
