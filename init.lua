@@ -599,7 +599,6 @@ local servers = {
   tsserver = {},
   html = { filetypes = { 'html', 'twig', 'hbs' } },
   cssls = { filetypes = { 'css' } },
-  jdtls = { filetypes = { 'java' } },
 
   lua_ls = {
     Lua = {
