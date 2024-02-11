@@ -571,11 +571,13 @@ local servers = {
   clangd = { filetypes = { 'c', 'cpp', 'h' } },
   bashls = {},
   -- gopls = {},
-  jedi_language_server = { filetypes = { 'py' } },
+  -- jedi_language_server = { filetypes = { 'py' } },
+  jedi_language_server = {},
   -- rust_analyzer = {},
-  -- tsserver = {},
+  tsserver = {},
   html = { filetypes = { 'html', 'twig', 'hbs'} },
   cssls = { filetypes = { 'css'} },
+  jdtls = { filetypes = { 'java'} },
 
   lua_ls = {
     Lua = {
