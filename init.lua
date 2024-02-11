@@ -294,6 +294,9 @@ require('lazy').setup({
   -- { import = 'custom.plugins' },
 }, {})
 
+require('java').setup()
+require('lspconfig').jdtls.setup({})
+
 -- [[ Setting options ]]
 -- See `:help vim.o`
 -- NOTE: You can change these options as you wish!
