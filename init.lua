@@ -301,6 +301,10 @@ require('lspconfig').jdtls.setup({})
 -- See `:help vim.o`
 -- NOTE: You can change these options as you wish!
 
+-- Spell checking
+vim.opt.spelllang = 'en_us'
+vim.opt.spell = true
+
 -- Set highlight on search
 vim.o.hlsearch = false
 
